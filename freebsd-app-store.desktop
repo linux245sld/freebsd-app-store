@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=FreeBSD App Store
+Name[zh_TW]=FreeBSD 應用程式商店
+Comment=Lightweight app store for FreeBSD
+Comment[zh_TW]=FreeBSD 輕量化應用程式商店
+Exec=/usr/local/bin/python3 /path/to/freebsd_app_store.py
+Icon=system-software-install
+Terminal=false
+Categories=System;PackageManager;
+Keywords=package;software;install;wine;
+StartupNotify=true

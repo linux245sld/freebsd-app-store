@@ -1,0 +1,85 @@
+{
+  "app_store_config": {
+    "version": "1.0.0",
+    "default_language": "zh_TW",
+    "wine_prefix": "~/.wine",
+    "download_path": "~/Downloads"
+  },
+  
+  "pkg_categories": [
+    {
+      "name_zh": "網頁瀏覽器",
+      "name_en": "Web Browsers",
+      "packages": ["firefox", "chromium", "opera"]
+    },
+    {
+      "name_zh": "開發工具",
+      "name_en": "Development Tools",
+      "packages": ["git", "vim", "emacs", "vscode", "python3", "gcc"]
+    },
+    {
+      "name_zh": "多媒體",
+      "name_en": "Multimedia",
+      "packages": ["vlc", "mpv", "gimp", "audacity", "kdenlive"]
+    },
+    {
+      "name_zh": "辦公軟體",
+      "name_en": "Office",
+      "packages": ["libreoffice", "calibre", "okular"]
+    },
+    {
+      "name_zh": "網路工具",
+      "name_en": "Network Tools",
+      "packages": ["wget", "curl", "nmap", "wireshark"]
+    },
+    {
+      "name_zh": "系統工具",
+      "name_en": "System Utilities",
+      "packages": ["htop", "tmux", "screen", "rsync", "zip", "unzip"]
+    }
+  ],
+  
+  "wine_apps_extended": {
+    "notepadpp": {
+      "name_zh": "Notepad++",
+      "name_en": "Notepad++",
+      "desc_zh": "功能強大的文字編輯器",
+      "desc_en": "Powerful text editor",
+      "exe_name": "npp.exe",
+      "url": "https://notepad-plus-plus.org/"
+    },
+    "7zip": {
+      "name_zh": "7-Zip",
+      "name_en": "7-Zip",
+      "desc_zh": "高壓縮比的壓縮軟體",
+      "desc_en": "High compression ratio archiver",
+      "exe_name": "7z.exe",
+      "url": "https://www.7-zip.org/"
+    }
+  },
+  
+  "wine_tips": {
+    "zh_TW": [
+      "首次使用 Wine 前，執行 'winecfg' 進行初始化",
+      "使用 'winetricks' 可以安裝 Windows 常用組件",
+      "某些應用程式可能需要 Windows 字型支援",
+      "建議為不同應用程式建立獨立的 Wine 環境 (WINEPREFIX)",
+      "Wine 版本持續更新，最新版通常有更好的相容性"
+    ],
+    "en_US": [
+      "Run 'winecfg' to initialize Wine before first use",
+      "Use 'winetricks' to install common Windows components",
+      "Some apps may require Windows font support",
+      "Consider using separate Wine prefixes for different apps",
+      "Wine versions are continuously updated for better compatibility"
+    ]
+  },
+  
+  "system_requirements": {
+    "min_freebsd_version": "12.0",
+    "recommended_freebsd_version": "13.0",
+    "min_python_version": "3.8",
+    "min_ram_mb": 512,
+    "recommended_ram_mb": 2048
+  }
+}
